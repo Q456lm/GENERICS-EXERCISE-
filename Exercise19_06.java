@@ -21,9 +21,15 @@ public class Exercise19_06 {
      * @return the maximum element
      */
     public static <E extends Comparable<E>> E max(ArrayList<E> list) {
-        // TODO: Implement this method
         System.out.println("TODO: max() not implemented yet");
-        return null;
+        E max = list.get(0);
+
+        for (int i = 0; i < list.size(); i++){
+            if (list.get(i).compareTo(max) > 0){
+                max = list.get(i);
+            }
+        }
+        return max;
     }
 
     public static void main(String[] args) {
